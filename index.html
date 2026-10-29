@@ -6,12 +6,15 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
 .wrap{max-width:760px;margin:0 auto;padding:36px 22px 60px}
-.head{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}
+.head{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:24px}
 .kicker{font-size:11px;letter-spacing:4px;color:var(--rose);font-weight:800}
 h1{font-size:30px;margin:10px 0 6px;letter-spacing:1px}
 .date{font-size:13px;color:var(--muted);letter-spacing:1px}
-.section{margin-top:30px}
-.sec-title{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.media{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.media audio{flex:1 1 100%;height:44px;border-radius:10px}
+.dl{display:inline-block;font-size:13px;font-weight:700;color:var(--rose);border:1px solid var(--rose);border-radius:999px;padding:9px 16px;text-decoration:none;letter-spacing:.5px}
+.section{margin-top:28px}
+.sec-title{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
 .sec-title h2{font-size:19px;margin:0;letter-spacing:1px}
 .sec-title span{font-size:11px;color:var(--muted);letter-spacing:2px}
 ol{list-style:none;margin:0;padding:0}
@@ -20,13 +23,19 @@ li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
 .body{min-width:0}
 .title{font-size:16.5px;font-weight:800;line-height:1.5}
 .desc{font-size:13px;color:#5f5954;line-height:1.7;margin-top:5px}
-.hot{font-size:11px;color:var(--muted);margin-top:5px}
+.meta{margin-top:7px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tag{font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 8px;letter-spacing:1px}
+.hot{font-size:11px;color:var(--muted)}
 .foot{margin-top:36px;font-size:11.5px;color:var(--muted);line-height:1.9;border-top:1px solid var(--line);padding-top:16px}
 </style></head><body><div class="wrap">
   <div class="head">
     <div class="kicker">DAILY HOT · 为 SHARON 定制</div>
     <h1>今日热点</h1>
     <div class="date">2026年10月29日 星期四</div>
+    <div class="media">
+      <audio controls preload="none" src="sharon.mp3"></audio>
+      <a class="dl" href="sharon.pdf" download>下载 PDF</a>
+    </div>
   </div>
   <div class="section">
     <div class="sec-title"><h2>明星热点</h2><span>TOP 5</span></div>
@@ -34,41 +43,41 @@ li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
     <li>
       <span class="rank">1</span>
       <div class="body">
-        <div class="title">三丽鸥在日本官网发布致歉声明</div>
-        <div class="desc">日本三丽鸥公司29日在官网发布声明称，针对目前正在播出的剧集《VIVANT》（《别班》）联名合作商品，公司收到了来自各方的不同意见。对于由此引发的担忧，我们深表歉意。</div>
-        <div class="hot">热度 780.8 万</div>
+        <div class="title">工资改发数字人民币了 有啥变化</div>
+        <div class="desc">近期，江苏多所高校发布通知，教职工工资将通过数字人民币钱包发放，这一话题迅速登上热搜。工资变成数字人民币，会有哪些变化？你问我答，今天来解答。</div>
+        <div class="meta"><span class="tag">百度</span><span class="tag">头条</span><span class="tag">B站</span><span class="hot">热度 780.8 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">2</span>
       <div class="body">
-        <div class="title">姆巴佩的“天价”账单才刚刚开始</div>
-        <div class="desc">近日，姆巴佩因访谈中的涉华不当言论，引发多家头部品牌集体解约，直接让他损失了近四成的稳定商业收入，且后续几乎没有任何挽回的可能。除了代言收入或将缩水，姆巴佩所面临的，还有代言公司解约后产生的违约金，以及这些广告活动会对消费者造成何种影响也难以估量。</div>
-        <div class="hot">热度 732.9 万</div>
+        <div class="title">国防部评电视剧《交锋》</div>
+        <div class="desc">10月29日下午，国防部新闻发言人张晓刚回应台海谍战剧《交锋》热映。张晓刚表示，看了这部剧更让人心系国家安全，致敬无名英雄，“利剑只为惩戒宵小，团圆留给骨肉同胞”，呼吁两岸人民携手反对“台独”，维护台海和平稳定，早日实现祖国完全统一。</div>
+        <div class="meta"><span class="tag">百度</span><span class="tag">头条</span><span class="hot">热度 771.3 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">3</span>
       <div class="body">
-        <div class="title">中国是三丽鸥至关重要的海外市场</div>
-        <div class="desc">10月28日晚间，日本三丽鸥公司致歉，宣布终止与争议日剧《VIVANT》的��名及后续合作。此前，该剧因被指歪曲历史、渲染“中国威胁”引发批评。财报显示，2025年三丽鸥中国大陆业务收入约15亿元，中国是三丽鸥至关重要的海外市场。</div>
-        <div class="hot">热度 599.7 万</div>
+        <div class="title">中国武侠 这次真站到世界面前了</div>
+        <div class="desc">10月29日，国产3A武侠游戏《影之刃零》正式发售。该游戏融入中式武侠背景、京剧舞狮等元素，甄子丹本人也在其中亮相。其PC版媒体均分达88分，超越《黑神话：悟空》的81分。</div>
+        <div class="meta"><span class="tag">百度</span><span class="hot">热度 723.5 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">4</span>
       <div class="body">
-        <div class="title">三丽鸥道歉敷衍了事</div>
-        <div class="desc">近日，Hello Kitty所属日本品牌三丽鸥就与日剧《VIVANT》联名商品引发争议致歉，道歉仅中国可见，网友质疑道歉敷衍了事。</div>
-        <div class="hot">热度 580.4 万</div>
+        <div class="title">兰香如故剧外全员好欢乐</div>
+        
+        <div class="meta"><span class="tag">抖音</span><span class="hot">热度 771.2 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">5</span>
       <div class="body">
-        <div class="title">你还会买三丽鸥吗</div>
-        <div class="desc">10月28日，三丽鸥宣布终止与日剧《VIVANT》联名并致歉。数据显示，中国是三丽鸥至关重要的海外市场，上半年三丽鸥中国收入7.81亿元。你还会买三丽鸥吗？</div>
-        <div class="hot">热度 570.6 万</div>
+        <div class="title">孙红雷扫黑大剧《铁证》来了</div>
+        <div class="desc">近日在鹅厂招商会上，孙红雷等主演的扫黑剧《铁证》发布预告，热度飙升。该剧由央视指导，孙红雷饰演黑恶集团匪首。该剧阵容强大且题材敢拍，有望超越此前爆红的《狂飙》。</div>
+        <div class="meta"><span class="tag">百度</span><span class="hot">热度 589.0 万</span></div>
       </div>
     </li></ol>
   </div>
@@ -78,46 +87,46 @@ li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
     <li>
       <span class="rank">1</span>
       <div class="body">
-        <div class="title">三丽鸥在日本官网发布致歉声明</div>
-        <div class="desc">日本三丽鸥公司29日在官网发布声明称，针对目前正在播出的剧集《VIVANT》（《别班》）联名合作商品，公司收到了来自各方的不同意见。对于由此引发的担忧，我们深表歉意。</div>
-        <div class="hot">热度 780.8 万</div>
+        <div class="title">张伟丽曾是健身房销冠月入2万</div>
+        
+        <div class="meta"><span class="tag">头条</span><span class="hot">热度 145.1 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">2</span>
       <div class="body">
-        <div class="title">早上五点的机场全是家长和孩子</div>
-        <div class="desc">近日，辽宁秋假带火亲子游，早上五点的机场挤满家长和孩子，宛如学校礼堂。多地秋假集中在11月，带动机票、酒店预订量大涨，传统旅游淡季迎来出游热潮。</div>
-        <div class="hot">热度 771.2 万</div>
+        <div class="title">预习一下初冬穿搭</div>
+        
+        <div class="meta"><span class="tag">抖音</span><span class="hot">热度 764.1 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">3</span>
       <div class="body">
-        <div class="title">“三张桌子”看作风</div>
-        <div class="desc">10月29日，《人民日报》刊文指出，党的作风正，人民心气顺，事业才能蓬勃发展。餐桌、会议桌、办公桌，党员干部身边寻常的三张桌子，是观察党风政风的窗口。一张餐桌，察民风、知政风、见作风；一张会议桌，从会场搬到现场；一张办公桌，减的是负担，增的是实绩。</div>
-        <div class="hot">热度 761.6 万</div>
+        <div class="title">秋冬贵气感穿搭</div>
+        
+        <div class="meta"><span class="tag">抖音</span><span class="hot">热度 763.7 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">4</span>
       <div class="body">
-        <div class="title">姆巴佩说“ill-judged”体现诚意了吗</div>
-        <div class="desc">近日，媒体分析指出，姆巴佩道歉信中“ill-judged”意为“欠考虑”而非认错，诚意明显不足。此前，其因在采访中发表涉华不当言论，后发布道歉声明。</div>
-        <div class="hot">热度 752.0 万</div>
+        <div class="title">斯拉夫美学穿搭公式</div>
+        
+        <div class="meta"><span class="tag">抖音</span><span class="hot">热度 763.3 万</span></div>
       </div>
     </li>
     <li>
       <span class="rank">5</span>
       <div class="body">
-        <div class="title">老外想去赏秋被司机拉到商丘</div>
-        <div class="desc">近日，一名外籍游客在开封表示想去“赏秋”，出租车司机听错地名将其拉至商丘。抵达后司机发现误会，哭笑不得，主动提出退还车费并免费送其返回开封。</div>
-        <div class="hot">热度 742.9 万</div>
+        <div class="title">影之刃零全剧情通关攻略</div>
+        
+        <div class="meta"><span class="tag">B站</span></div>
       </div>
     </li></ol>
   </div>
   <div class="foot">
-    数据来源：百度热搜（小红书官方热搜暂无公开接口，当前以生活方式热词替代）<br>
-    每天 07:00 自动更新 · 关注：明星热点 / 小红书热搜 · 关键词：明星八卦、摄影、数码测评
+    数据来源：头条 / 抖音 / B站 / 百度热搜，已去重合并<br>
+    每天 07:00 自动更新 · 关注：明星热点、小红书热搜 · 关键词：明星八卦、摄影、数码测评
   </div>
 </div></body></html>
